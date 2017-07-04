@@ -10,6 +10,7 @@ public class App
 	/* Main method to start
 	 * adding customer 1 
 	 * adding customer 3
+	 * adding customer 4
 	 */
     public static void main( String[] args )
     {
@@ -22,9 +23,15 @@ public class App
         Customer customer2 = new Customer(2, "niraj",28);
         customerDAO.insert(customer2);
         
+
         Customer customer3 = new Customer(3, "brij",28);
         customerDAO.insert(customer3);
         
+
+        Customer customer4 = new Customer(4, "anupriya",28);
+        customerDAO.insert(customer4);
+       
+
         Customer customer1 = customerDAO.findByCustomerId(1);
         System.out.println(customer1);
         
@@ -32,8 +39,13 @@ public class App
         Customer customer2 = customerDAO.findByCustomerId(2);
         System.out.println(customer2);
         
+
         Customer customer3 = customerDAO.findByCustomerId(3);
         System.out.println(customer3);
+
+        Customer customer4 = customerDAO.findByCustomerId(4);
+        System.out.println(customer4);
+
         
     }
 }
