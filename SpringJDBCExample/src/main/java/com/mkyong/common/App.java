@@ -11,6 +11,7 @@ public class App
 	 * adding customer 1 
 	 * adding customer 3
 	 * adding customer 4
+	 * adding customer 5
 	 */
     public static void main( String[] args )
     {
@@ -31,6 +32,8 @@ public class App
         Customer customer4 = new Customer(4, "anupriya",28);
         customerDAO.insert(customer4);
        
+        Customer customer5 = new Customer(5, "anupriya",28);
+        customerDAO.insert(customer5);
 
         Customer customer1 = customerDAO.findByCustomerId(1);
         System.out.println(customer1);
@@ -45,6 +48,11 @@ public class App
 
         Customer customer4 = customerDAO.findByCustomerId(4);
         System.out.println(customer4);
+        
+        Customer customer5 = customerDAO.findByCustomerId(5);
+        System.out.println(customer5);
+        
+        
 
         
     }
