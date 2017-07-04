@@ -13,7 +13,7 @@ public class App
 	 * adding customer 4
 	 * adding customer 5
 	 * adding customer 6
-	 * added a Test.java file
+	 * 
 	 */
     public static void main( String[] args )
     {
